@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambulancias Médicas | Servicio 24/7 — Emergencias y Traslados Profesionales</title>
+  <meta name="description" content="Servicio privado de ambulancias para emergencias, traslados médicos programados, interhospitalarios y cobertura de eventos. Personal paramédico certificado disponible las 24 horas.">
+  <meta name="keywords" content="servicio de ambulancia, ambulancia privada, traslado médico, ambulancia 24 horas, atención prehospitalaria, urgencias médicas, paramédicos, soporte vital">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Ambulancias Médicas">
+  <!-- Permite que las imágenes externas carguen correctamente desde archivo local -->
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Ambulancias Médicas | Servicio 24/7 Profesional">
+  <meta property="og:description" content="Atención prehospitalaria y traslados seguros con paramédicos certificados. Disponibles las 24 horas.">
+  <meta property="og:image"       content="https://images.unsplash.com/photo-1587556201082-2b63896dfa20?w=1200">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23D32F2F'/><text y='.9em' font-size='70' x='12'>🚑</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =============================================
+     LOADER PREMIUM
+     ============================================= -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-bg"></div>
+  <div class="loader-cross-wrap">
+    <svg class="loader-cross-svg" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="40" cy="40" rx="34" ry="34" class="loader-glow-circle"/>
+      <path class="loader-cross-path"
+        d="M28,8 H52 V28 H72 V52 H52 V72 H28 V52 H8 V28 H28 Z"
+        fill="none" stroke="#D32F2F" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+      <path class="loader-cross-fill"
+        d="M28,8 H52 V28 H72 V52 H52 V72 H28 V52 H8 V28 H28 Z"
+        fill="rgba(211,47,47,0.12)"/>
+    </svg>
+    <svg class="loader-ring-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="60" cy="60" r="54" fill="none" stroke="rgba(211,47,47,0.15)" stroke-width="1"/>
+      <circle class="loader-ring-arc" cx="60" cy="60" r="54" fill="none"
+        stroke="#D32F2F" stroke-width="2" stroke-linecap="round" stroke-dasharray="85 254"/>
+    </svg>
+  </div>
+  <div class="loader-brand-text">
+    <span class="loader-brand-main">AMBULANCIAS</span>
+    <span class="loader-brand-sub">MÉDICAS</span>
+  </div>
+  <div class="loader-progress-wrap">
+    <div class="loader-progress-bar">
+      <div class="loader-progress-fill"></div>
+      <div class="loader-progress-glow"></div>
+    </div>
+    <span class="loader-progress-label">Iniciando servicio...</span>
+  </div>
+  <div class="loader-dots">
+    <span class="loader-dot"></span>
+    <span class="loader-dot"></span>
+    <span class="loader-dot"></span>
+  </div>
+</div>
+
+
+<!-- =============================================
+     NAVBAR
+     ============================================= -->
+<header id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <div class="nav-logo-icon"><i class="fas fa-truck-medical"></i></div>
+        <div class="nav-logo-text">
+          <strong>AMBULANCIAS</strong>
+          <span>Médicas</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proceso">Cómo funciona</a></li>
+        <li><a href="#unidades">Nuestra flota</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="nav-phone">
+          <small>Emergencias 24/7</small>
+          <a href="tel:5614655489"><i class="fas fa-phone"></i> 56 1465 5489</a>
+        </div>
+        <a href="https://wa.me/5614655489" target="_blank" class="btn-nav">
+          <i class="fab fa-whatsapp"></i> Solicitar ahora
+        </a>
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menú">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobile-menu">
+    <a href="#servicios"><i class="fas fa-briefcase-medical"></i> Servicios</a>
+    <a href="#proceso"><i class="fas fa-route"></i> Cómo funciona</a>
+    <a href="#unidades"><i class="fas fa-truck-medical"></i> Nuestra flota</a>
+    <a href="#nosotros"><i class="fas fa-star"></i> Nosotros</a>
+    <div class="mobile-menu-ctas">
+      <a href="tel:5614655489" class="mobile-btn-call"><i class="fas fa-phone"></i> Llamar: 56 1465 5489</a>
+      <a href="https://wa.me/5614655489" target="_blank" class="mobile-btn-wa"><i class="fab fa-whatsapp"></i> Enviar WhatsApp</a>
+    </div>
+  </nav>
+</header>
+
+
+<!-- =============================================
+     HERO — CENTRADO + IMAGEN BLOB/GOTA
+     ============================================= -->
+<section id="hero">
+
+  <!-- Canvas partículas -->
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+  <!-- Fondo oscuro -->
+  <div class="hero-bg-layer" aria-hidden="true">
+    <img src="https://images.unsplash.com/photo-1587556201082-2b63896dfa20?auto=format&fit=crop&w=1800&q=80"
+         alt="" loading="eager" fetchpriority="high">
+    <div class="hero-bg-overlay"></div>
+  </div>
+
+  <!-- Orbes de luz -->
+  <div class="hero-orb hero-orb-1" id="orb1" aria-hidden="true"></div>
+  <div class="hero-orb hero-orb-2" id="orb2" aria-hidden="true"></div>
+  <div class="hero-orb hero-orb-3" id="orb3" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-scanline" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════
+       IMAGEN BLOB / GOTA DE AGUA — Ambulancia
+       ═══════════════════════════════════════ -->
+  <div class="hero-blob-wrap" id="hero-blob-wrap" aria-hidden="true">
+    <!-- Blob principal — ambulancia roja en servicio -->
+    <div class="hero-blob hero-blob-main">
+      <img src="https://images.unsplash.com/photo-1587556201082-2b63896dfa20?auto=format&fit=crop&w=900&q=85"
+           alt="Ambulancia médica roja en servicio de emergencia" loading="eager">
+      <div class="hero-blob-glow"></div>
+    </div>
+    <!-- Blob secundario — paramédicos atendiendo -->
+    <div class="hero-blob hero-blob-secondary">
+      <img src="https://images.unsplash.com/photo-1587556201082-2b63896dfa20?auto=format&fit=crop&w=600&q=80"
+           alt="Ambulancia en servicio nocturno" loading="eager">
+    </div>
+    <!-- Blob terciario — interior ambulancia con equipo médico -->
+    <div class="hero-blob hero-blob-tertiary">
+      <img src="https://images.unsplash.com/photo-1587556201082-2b63896dfa20?auto=format&fit=crop&w=400&q=75"
+           alt="Equipo médico interior de ambulancia" loading="lazy">
+    </div>
+    <!-- Anillo decorativo alrededor del blob -->
+    <div class="hero-blob-ring hero-blob-ring-1"></div>
+    <div class="hero-blob-ring hero-blob-ring-2"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       CONTENIDO CENTRADO
+       ═══════════════════════════════════════ -->
+  <div class="container" style="position:relative;z-index:10;width:100%;">
+    <div class="hero-content-centered">
+
+      <!-- Badge -->
+      <div class="hero-badge" id="hero-badge">
+        <div class="hero-badge-dot">
+          <span class="dot-core"></span>
+          <span class="dot-ring"></span>
+        </div>
+        <span>Servicio Disponible 24 horas · 365 días del año</span>
+      </div>
+
+      <!-- Título centrado -->
+      <h1 class="hero-title" id="hero-title" aria-label="Tu Emergencia, Nuestra Prioridad Absoluta">
+        <span class="title-line" data-delay="0">
+          <span class="title-inner">Tu Emergencia,</span>
+        </span>
+        <span class="title-line" data-delay="120">
+          <span class="title-inner highlight-gradient">Nuestra Prioridad</span>
+        </span>
+        <span class="title-line" data-delay="240">
+          <span class="title-inner line-blue-grad">Absoluta.</span>
+        </span>
+      </h1>
+
+      <!-- Descripción -->
+      <p class="hero-desc" id="hero-desc">
+        Atención prehospitalaria profesional, traslados médicos seguros y cobertura de eventos.
+        Personal paramédico certificado y unidades equipadas con tecnología de vanguardia.
+      </p>
+
+      <!-- CTAs centrados -->
+      <div class="hero-ctas" id="hero-ctas">
+        <a href="https://wa.me/5614655489" target="_blank" class="btn-primary hero-btn-1" data-ripple>
+          <span class="btn-icon"><i class="fab fa-whatsapp"></i></span>
+          <span class="btn-label">Solicitar por WhatsApp</span>
+          <span class="btn-shimmer"></span>
+        </a>
+        <a href="tel:5614655489" class="btn-secondary hero-btn-2">
+          <span class="btn-icon"><i class="fas fa-phone-volume"></i></span>
+          <span class="btn-label">Llamar ahora</span>
+        </a>
+      </div>
+
+      <!-- Trust items -->
+      <div class="hero-trust" id="hero-trust">
+        <div class="hero-trust-item" data-trust-delay="0">
+          <i class="fas fa-check-circle"></i><span>Respuesta inmediata</span>
+        </div>
+        <div class="hero-trust-item" data-trust-delay="80">
+          <i class="fas fa-check-circle"></i><span>Paramédicos certificados</span>
+        </div>
+        <div class="hero-trust-item" data-trust-delay="160">
+          <i class="fas fa-check-circle"></i><span>Unidades equipadas</span>
+        </div>
+        <div class="hero-trust-item" data-trust-delay="240">
+          <i class="fas fa-check-circle"></i><span>Cobertura 24/7</span>
+        </div>
+      </div>
+
+      <!-- Métricas centradas -->
+      <div class="hero-metric" id="hero-metric">
+        <div class="metric-item">
+          <span class="metric-num">+5,000</span>
+          <span class="metric-label">Servicios realizados</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <span class="metric-num">24/7</span>
+          <span class="metric-label">Despacho activo</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <span class="metric-num">98%</span>
+          <span class="metric-label">Satisfacción</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <span class="metric-num">+15</span>
+          <span class="metric-label">Años de experiencia</span>
+        </div>
+      </div>
+
+      <!-- Tarjetas flotantes pequeñas debajo de las métricas -->
+      <div class="hero-float-cards" id="hero-float-cards">
+        <div class="glass-card-mini" id="gcard1" data-parallax-speed="14">
+          <div class="gcm-icon" style="background:rgba(211,47,47,0.2);">
+            <i class="fas fa-stopwatch" style="color:#EF5350;"></i>
+          </div>
+          <div>
+            <p class="gc-label">Tiempo de respuesta</p>
+            <p class="gc-value">Despacho Inmediato</p>
+          </div>
+          <div class="glass-card-pulse"></div>
+        </div>
+        <div class="glass-card-mini" id="gcard2" data-parallax-speed="18">
+          <div class="gcm-icon" style="background:rgba(25,118,210,0.2);">
+            <i class="fas fa-user-nurse" style="color:#42A5F5;"></i>
+          </div>
+          <div>
+            <p class="gc-label">Personal</p>
+            <p class="gc-value">Paramédico Certificado</p>
+          </div>
+        </div>
+        <div class="glass-card-mini" id="gcard3" data-parallax-speed="10">
+          <div class="gcm-icon" style="background:rgba(74,222,128,0.2);">
+            <i class="fas fa-clock" style="color:#4ade80;"></i>
+          </div>
+          <div>
+            <p class="gc-label">Disponibilidad</p>
+            <p class="gc-value">24 / 7 / 365</p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /hero-content-centered -->
+  </div><!-- /container -->
+
+  <!-- Divisor -->
+  <div class="hero-divider" aria-hidden="true">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 80" preserveAspectRatio="none">
+      <path d="M321,40c58-8,114-22,172-30,82-13,168-13,250,0C823,22,907,52,986,66c70,14,147,19,214,3V80H0V68C60,84,131,85,197,76Z" fill="#F0F4F8"></path>
+    </svg>
+  </div>
+</section>
+
+
+<!-- =============================================
+     TRUST BAR
+     ============================================= -->
+<section id="trust-bar">
+  <div class="container">
+    <div class="trust-card reveal">
+      <div class="trust-item">
+        <i class="fas fa-clock"></i>
+        <strong>Atención 24 / 7</strong>
+        <small>Disponibles día y noche</small>
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-user-nurse"></i>
+        <strong>Paramédicos Certificados</strong>
+        <small>Personal altamente capacitado</small>
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-truck-medical"></i>
+        <strong>Unidades Equipadas</strong>
+        <small>Tecnología médica actual</small>
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-map-location-dot"></i>
+        <strong>Traslados Locales y Foráneos</strong>
+        <small>Cobertura amplia</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     SERVICES — Con imágenes reales
+     ============================================= -->
+<section id="servicios">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Nuestros Servicios</span>
+      <h2 class="section-title">Soluciones integrales en atención prehospitalaria</h2>
+      <p class="section-desc">Contamos con la experiencia, el personal y el equipo para responder ante cualquier necesidad médica, desde una emergencia hasta un traslado programado.</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Servicio 1 — Emergencias 24/7 -->
+      <!-- Imagen: ambulancia roja con luces encendidas respondiendo emergencia -->
+      <div class="service-card reveal">
+        <div class="service-card-img">
+          <img src="ambulancias/images%20(6).jpg"
+               alt="Ambulancia médica respondiendo emergencia con luces encendidas" loading="lazy">
+          <div class="service-card-img-overlay"></div>
+          <span class="service-card-badge">24/7</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon icon-red"><i class="fas fa-truck-fast"></i></div>
+          <h3>Emergencias 24/7</h3>
+          <p>Respuesta inmediata a urgencias médicas con unidades de soporte vital básico y avanzado. Cada segundo importa.</p>
+          <span class="service-tag">Urgente · Inmediato</span>
+        </div>
+      </div>
+
+      <!-- Servicio 2 — Traslados Programados -->
+      <!-- Imagen: ambulancia de traslado programado -->
+      <div class="service-card reveal delay-100">
+        <div class="service-card-img">
+          <img src="ambulancias/images%20(7).jpg"
+               alt="Ambulancia para traslados programados y citas médicas" loading="lazy">
+          <div class="service-card-img-overlay"></div>
+          <span class="service-card-badge" style="background:rgba(25,118,210,0.9);">Programado</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon icon-blue"><i class="fas fa-calendar-check"></i></div>
+          <h3>Traslados Programados</h3>
+          <p>Movilización cómoda y puntual para hemodiálisis, terapias, citas de especialidad y estudios clínicos.</p>
+          <span class="service-tag">Puntual · Confort</span>
+        </div>
+      </div>
+
+      <!-- Servicio 3 — Traslado Interhospitalario -->
+      <!-- Imagen: ambulancia estacionada en entrada de hospital, transferencia de paciente -->
+      <div class="service-card reveal delay-200">
+        <div class="service-card-img">
+          <img src="ambulancias/images%20(8).jpg"
+               alt="Ambulancia en entrada de hospital para traslado interhospitalario" loading="lazy">
+          <div class="service-card-img-overlay"></div>
+          <span class="service-card-badge" style="background:rgba(10,37,64,0.9);">Hospitales</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon icon-navy"><i class="fas fa-hospital"></i></div>
+          <h3>Traslado Interhospitalario</h3>
+          <p>Traslados seguros entre clínicas u hospitales garantizando la continuidad de atención y estabilidad del paciente.</p>
+          <span class="service-tag">Seguro · Monitorizado</span>
+        </div>
+      </div>
+
+      <!-- Servicio 4 — Traslados Foráneos -->
+      <!-- Imagen: ambulancia circulando en carretera de noche / largo recorrido -->
+      <div class="service-card reveal delay-300">
+        <div class="service-card-img">
+          <img src="ambulancias/images%20(9).jpg"
+               alt="Ambulancia en traslado foráneo por carretera de noche" loading="lazy">
+          <div class="service-card-img-overlay"></div>
+          <span class="service-card-badge" style="background:rgba(25,118,210,0.85);">Foráneo</span>
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon icon-blue"><i class="fas fa-road"></i></div>
+          <h3>Traslados Foráneos</h3>
+          <p>Llevamos a su paciente de manera monitorizada y segura a otras ciudades o estados con unidades preparadas para viajes largos.</p>
+          <span class="service-tag">Larga distancia · Monitored</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     PROCESS — Con imagen real mejorada
+     ============================================= -->
+<section id="proceso">
+  <div class="container">
+    <div class="process-grid">
+
+      <!-- Imagen principal con stack de fotos -->
+      <div class="process-img-stack reveal-left">
+        <!-- Imagen principal -->
+        <div class="process-img-main">
+          <img src="ambulancias/images%20(10).jpg"
+               alt="Ambulancia médica en proceso de despacho y atención" loading="lazy">
+          <div class="process-img-badge">
+            <div class="badge-icon"><i class="fas fa-headset"></i></div>
+            <div class="badge-text">
+              <p>Central de Despacho Activa</p>
+              <p>Personal entrenado listo 24 horas</p>
+            </div>
+          </div>
+        </div>
+        <!-- Imagen secundaria flotante -->
+        <div class="process-img-float">
+          <img src="ambulancias/images%20(11).jpg"
+               alt="Ambulancia médica lista para servicio" loading="lazy">
+          <div class="process-img-float-label">
+            <i class="fas fa-check-circle" style="color:#4ade80;"></i>
+            Unidad disponible
+          </div>
+        </div>
+      </div>
+
+      <!-- Pasos -->
+      <div class="reveal-right">
+        <span class="section-tag">Proceso Sencillo</span>
+        <h2 class="process-title">¿Cómo solicitar nuestro servicio?</h2>
+        <p class="process-intro">Entendemos que el tiempo es vital. Hemos optimizado cada paso para darte atención de la forma más rápida y sin complicaciones posible.</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h4>Contáctanos</h4>
+              <p>Llama a nuestra línea de emergencia directa o envíanos un mensaje por WhatsApp en cualquier momento.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h4>Indica Ubicación y Situación</h4>
+              <p>Nuestro despachador certificado tomará tu ubicación exacta, datos del paciente y condición médica.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <h4>Despacho Inmediato</h4>
+              <p>Asignamos la unidad más cercana y el personal médico idóneo según el tipo de servicio requerido.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <h4>Atención y Traslado Seguro</h4>
+              <p>Llegamos, estabilizamos si es necesario y realizamos el traslado con monitoreo constante.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     FLEET / UNITS — Imágenes reales
+     ============================================= -->
+<section id="unidades">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Nuestra Flota</span>
+      <h2 class="section-title">Unidades listas para cualquier emergencia</h2>
+      <p class="section-desc">Ambulancias de modelo reciente, equipadas con tecnología médica de vanguardia y sometidas a estrictos protocolos de mantenimiento e higiene.</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="fleet-grid">
+      <div class="fleet-card">
+        <div class="fleet-img">
+          <img src="ambulancias/images%20(12).jpg"
+               alt="Ambulancia básica para traslados programados" loading="lazy">
+          <div class="fleet-img-overlay"></div>
+        </div>
+        <div class="fleet-info">
+          <span class="fleet-badge badge-red">Traslados</span>
+          <h3>Ambulancias Básicas</h3>
+          <p>Ideales para traslados programados, altas hospitalarias y acompañamiento médico seguro.</p>
+        </div>
+      </div>
+
+      <div class="fleet-card">
+        <div class="fleet-img">
+          <img src="ambulancias/images%20(13).jpg"
+               alt="Ambulancia de soporte vital avanzado" loading="lazy">
+          <div class="fleet-img-overlay" style="background:linear-gradient(180deg,transparent 20%,rgba(180,20,20,0.88) 100%);"></div>
+        </div>
+        <div class="fleet-info">
+          <span class="fleet-badge badge-white">Urgencias</span>
+          <h3>Soporte Vital Avanzado</h3>
+          <p>Equipadas como terapia intensiva móvil para el manejo de pacientes críticos.</p>
+        </div>
+      </div>
+
+      <div class="fleet-card">
+        <div class="fleet-img">
+          <img src="ambulancias/images%20(14).jpg"
+               alt="Equipamiento médico interior de ambulancia" loading="lazy">
+          <div class="fleet-img-overlay"></div>
+        </div>
+        <div class="fleet-info">
+          <span class="fleet-badge badge-blue">Tecnología</span>
+          <h3>Equipamiento Médico</h3>
+          <p>Monitores cardíacos, desfibriladores, ventiladores y medicamentos de emergencia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     STATS — Con imagen de fondo real
+     ============================================= -->
+<section id="stats">
+  <!-- Imagen de fondo -->
+  <div class="stats-bg-img" aria-hidden="true">
+    <img src="ambulancias/Cuenta-la-Cruz-Roja-en-Matamoros-con-nueva-ambulancia.jpg"
+         alt="" loading="lazy">
+    <div class="stats-bg-overlay"></div>
+  </div>
+
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-header reveal" style="margin-bottom:48px;">
+      <span class="section-tag" style="border-color:rgba(239,83,80,0.35);color:#EF9A9A;background:rgba(211,47,47,0.12);">Nuestros Números</span>
+      <h2 class="section-title" style="color:#fff;">Años de confianza respaldan nuestro servicio</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-num"><span data-target="5000" data-suffix="+">0+</span></div>
+        <div class="stat-label">Servicios realizados</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num"><span data-target="365" data-suffix=" días">0 días</span></div>
+        <div class="stat-label">Disponibles al año</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num"><span data-target="15" data-suffix=" años">0 años</span></div>
+        <div class="stat-label">De experiencia</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num"><span data-target="98" data-suffix="%">0%</span></div>
+        <div class="stat-label">Clientes satisfechos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     EVENTS / CORPORATE
+     ============================================= -->
+<section id="eventos">
+  <div class="events-orb-1"></div>
+  <div class="events-orb-2"></div>
+  <div class="container">
+    <div class="events-grid">
+      <div class="events-imgs reveal-left">
+        <img src="ambulancias/images%20(15).jpg"
+             alt="Ambulancia de cobertura médica en evento" loading="lazy">
+        <img src="ambulancias/images%20(16).jpg"
+             alt="Interior de ambulancia equipada para guardia en evento corporativo" loading="lazy">
+      </div>
+      <div class="events-content reveal-right">
+        <span class="section-tag">Protección Empresarial</span>
+        <h2>Cobertura Médica para Eventos y Empresas</h2>
+        <p>Brindamos respaldo médico prehospitalario para garantizar la seguridad de tus colaboradores y asistentes. Prevenimos riesgos y actuamos de forma inmediata ante cualquier eventualidad.</p>
+        <ul class="events-list">
+          <li><i class="fas fa-check-circle"></i> Eventos deportivos, conciertos y festivales</li>
+          <li><i class="fas fa-check-circle"></i> Obras de construcción y plantas industriales</li>
+          <li><i class="fas fa-check-circle"></i> Escuelas, universidades y centros educativos</li>
+          <li><i class="fas fa-check-circle"></i> Eventos corporativos, congresos y convenciones</li>
+        </ul>
+        <a href="#cta" class="btn-events">Cotizar cobertura <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     WHY US — Con imágenes reales en las tarjetas
+     ============================================= -->
+<section id="nosotros">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Por qué elegirnos</span>
+      <h2 class="section-title">La seguridad de estar en las mejores manos</h2>
+      <p class="section-desc">Nuestro compromiso es salvaguardar la vida y salud de cada paciente mediante un servicio ético, rápido y altamente profesional.</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="why-grid">
+
+      <!-- Trato Humano -->
+      <div class="why-card">
+        <div class="why-card-img">
+          <img src="ambulancias/images%20(6).jpg"
+               alt="Ambulancia médica con servicio de atención humana y profesional" loading="lazy">
+          <div class="why-card-img-overlay"></div>
+        </div>
+        <div class="why-card-body">
+          <div class="why-icon"><i class="fas fa-heart"></i></div>
+          <h3>Trato Humano</h3>
+          <p>Entendemos la vulnerabilidad de una emergencia. Brindamos empatía, respeto y contención emocional al paciente y sus familiares en todo momento.</p>
+        </div>
+      </div>
+
+      <!-- Equipo Moderno -->
+      <div class="why-card">
+        <div class="why-card-img">
+          <img src="ambulancias/images%20(8).jpg"
+               alt="Interior de ambulancia con equipamiento médico de vanguardia" loading="lazy">
+          <div class="why-card-img-overlay"></div>
+        </div>
+        <div class="why-card-body">
+          <div class="why-icon"><i class="fas fa-stethoscope"></i></div>
+          <h3>Equipo de Vanguardia</h3>
+          <p>Nuestras ambulancias cumplen con normativas estrictas y están equipadas con instrumental biomédico de última generación para todo tipo de situaciones.</p>
+        </div>
+      </div>
+
+      <!-- Seguridad Total -->
+      <div class="why-card">
+        <div class="why-card-img">
+          <img src="ambulancias/images%20(9).jpg"
+               alt="Ambulancia con protocolos estrictos de seguridad y traslado" loading="lazy">
+          <div class="why-card-img-overlay"></div>
+        </div>
+        <div class="why-card-body">
+          <div class="why-icon"><i class="fas fa-shield-heart"></i></div>
+          <h3>Seguridad Total</h3>
+          <p>Protocolos estrictos de higiene, conducción segura y manejo clínico certificado para garantizar traslados sin contratiempos de principio a fin.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Franja extra con imagen — testimonio visual -->
+    <div class="why-banner reveal">
+      <div class="why-banner-img">
+        <img src="ambulancias/images%20(16).jpg"
+             alt="Ambulancia médica lista para responder ante cualquier emergencia" loading="lazy">
+        <div class="why-banner-overlay"></div>
+      </div>
+      <div class="why-banner-content">
+        <i class="fas fa-quote-left why-banner-quote-icon"></i>
+        <p class="why-banner-text">
+          "En una emergencia, cada segundo cuenta. Nuestro equipo está entrenado para actuar con precisión, rapidez y la máxima atención humana cuando más nos necesitas."
+        </p>
+        <div class="why-banner-author">
+          <div class="why-banner-author-dot"></div>
+          <span>Equipo Médico Prehospitalario — Ambulancias Médicas</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =============================================
+     FAQ
+     ============================================= -->
+<section id="faq">
+  <div class="container">
+    <!-- Intro con imagen lateral -->
+    <div class="faq-layout">
+
+      <!-- Imagen lateral -->
+      <div class="faq-img-col reveal-left">
+        <div class="faq-img-wrap">
+          <img src="ambulancias/images%20(11).jpg"
+               alt="Ambulancia médica disponible las 24 horas para atender llamadas de emergencia" loading="lazy">
+          <div class="faq-img-badge">
+            <i class="fas fa-phone-volume" style="color:#D32F2F;font-size:20px;"></i>
+            <div>
+              <strong>56 1465 5489</strong>
+              <span>Línea directa 24/7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Preguntas -->
+      <div class="faq-questions-col reveal-right">
+        <div style="margin-bottom:36px;">
+          <span class="section-tag">Preguntas Frecuentes</span>
+          <h2 class="section-title" style="text-align:left;margin-bottom:0;">Resolvemos tus dudas</h2>
+        </div>
+
+        <div class="faq-wrap">
+          <div class="faq-item">
+            <button class="faq-btn">
+              <span>¿El servicio está disponible las 24 horas?</span>
+              <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+            </button>
+            <div class="faq-body">
+              <p>Sí, nuestra central de despacho y nuestras unidades operan los 365 días del año, las 24 horas del día. Siempre habrá alguien disponible para atender tu llamada y enviar una unidad de forma inmediata.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-btn">
+              <span>¿Realizan traslados programados para citas médicas?</span>
+              <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+            </button>
+            <div class="faq-body">
+              <p>Por supuesto. Brindamos servicio de traslado redondo para pacientes que requieren hemodiálisis, terapias de rehabilitación, citas de especialidad o estudios de imagen, garantizando comodidad y puntualidad.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-btn">
+              <span>¿Qué información necesito proporcionar al llamar?</span>
+              <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+            </button>
+            <div class="faq-body">
+              <p>Para agilizar el servicio te pediremos: ubicación exacta con referencias, motivo de la llamada o síntomas del paciente, edad aproximada y un número de contacto alterno. Con esos datos despachamos la unidad de inmediato.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-btn">
+              <span>¿Pueden trasladar pacientes fuera de la ciudad?</span>
+              <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+            </button>
+            <div class="faq-body">
+              <p>Sí, contamos con servicio de traslados foráneos. Nuestras unidades están preparadas mecánicamente y equipadas médicamente para viajes largos, garantizando la seguridad y monitoreo del paciente durante todo el trayecto.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-btn">
+              <span>¿Ofrecen cobertura médica para eventos o empresas?</span>
+              <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+            </button>
+            <div class="faq-body">
+              <p>Sí. Brindamos servicio de guardia médica con ambulancia y paramédicos para eventos deportivos, corporativos, construcciones, escuelas y más. Contáctanos para cotizar la cobertura según el tipo y tamaño de tu evento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     FINAL CTA — Con imagen de fondo
+     ============================================= -->
+<section id="cta">
+  <div class="cta-pattern"></div>
+  <!-- Imagen de fondo semi-transparente -->
+  <div class="cta-bg-img" aria-hidden="true">
+    <img src="ambulancias/images%20(15).jpg"
+         alt="" loading="lazy">
+    <div class="cta-bg-overlay"></div>
+  </div>
+
+  <div class="container" style="position:relative;z-index:3;">
+    <div class="cta-content reveal">
+      <div class="cta-icon"><i class="fas fa-phone-volume"></i></div>
+      <h2>¿Necesitas una ambulancia ahora mismo?</h2>
+      <p>No pierdas tiempo. Contáctanos de inmediato y recibe atención rápida para emergencias, traslados médicos o servicios programados.</p>
+      <div class="cta-btns">
+        <a href="tel:5614655489" class="btn-cta-phone">
+          <i class="fas fa-phone" style="color:#D32F2F;"></i>
+          Llamar: 56 1465 5489
+        </a>
+        <a href="https://wa.me/5614655489" target="_blank" class="btn-cta-wa">
+          <i class="fab fa-whatsapp" style="font-size:22px;"></i>
+          Enviar WhatsApp
+        </a>
+      </div>
+      <p class="cta-note"><i class="fas fa-clock"></i> Central de despacho activa las 24 horas · Respuesta inmediata garantizada</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     FOOTER
+     ============================================= -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-icon">
+          <div class="icon"><i class="fas fa-truck-medical"></i></div>
+          <div><strong>AMBULANCIAS <span>MÉDICAS</span></strong></div>
+        </div>
+        <p class="footer-bio">Servicio profesional de atención prehospitalaria y traslados seguros. Disponibles los 365 días del año, las 24 horas del día, para proteger lo más valioso: la vida.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/5614655489" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#servicios">Nuestros Servicios</a></li>
+          <li><a href="#proceso">Cómo funciona</a></li>
+          <li><a href="#unidades">Nuestra Flota</a></li>
+          <li><a href="#nosotros">Por qué elegirnos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">Emergencias 24/7</a></li>
+          <li><a href="#servicios">Traslados Programados</a></li>
+          <li><a href="#servicios">Traslados Foráneos</a></li>
+          <li><a href="#eventos">Cobertura de Eventos</a></li>
+          <li><a href="#eventos">Servicio Corporativo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <div class="footer-contact-item">
+          <i class="fas fa-phone"></i>
+          <div><span class="main">56 1465 5489</span><span class="sub">Línea de emergencia 24/7</span></div>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fab fa-whatsapp" style="color:#25D366;font-size:16px;"></i>
+          <div><span class="main">WhatsApp Directo</span><span class="sub">wa.me/5614655489</span></div>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-envelope"></i>
+          <div><span class="main">contacto@ambulanciasmedicas.com</span><span class="sub">Atención general</span></div>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-location-dot"></i>
+          <div><span class="main">Ciudad de México</span><span class="sub">Cobertura CDMX y Área Metropolitana</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Ambulancias Médicas. Todos los derechos reservados.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Aviso de Privacidad</a>
+        <a href="#">Términos de Servicio</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Botones flotantes -->
+<div id="float-btns">
+  <a href="https://wa.me/5614655489" target="_blank" class="float-wa" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="float-wa-label">Solicitar por WhatsApp</span>
+  </a>
+  <a href="tel:5614655489" class="float-phone" aria-label="Llamar ahora">
+    <i class="fas fa-phone"></i>
+    <span>56 1465 5489</span>
+  </a>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
